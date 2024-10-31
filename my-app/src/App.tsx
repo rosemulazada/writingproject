@@ -1,8 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 
 import {  Route, Routes, useLocation } from 'react-router-dom';
-import { routes } from './routes';
+import HomePage from './components/pages/HomePage/HomePage'
+import { routes } from './utils/routes';
+import { useEffect } from 'react';
 
 function App() {
   const location = useLocation();
@@ -25,9 +26,8 @@ function App() {
     <div className="App">
       <Routes location={location} key={location.pathname}>
         <Route path={routes.homePage} element={<HomePage />} />
-        <Route
-          path={routes.loginRegisterPage} element={<LoginRegisterPage />}/>
-        <Route path={routes.projectPage(':projectId')} element={<ProjectPage />} />
+        {/* <Route path={routes.loginRegisterPage} element={<LoginRegisterPage />}/>
+        <Route path={routes.projectPage(':projectId')} element={<ProjectPage />} /> */}
       </Routes>
     </div>
   );
