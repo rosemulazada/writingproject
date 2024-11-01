@@ -24,7 +24,7 @@
       "shared": ["../src/shared/*"],
     },
   },
-  "include": ["src", "vite.config.mjs"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts", "App.tsx"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

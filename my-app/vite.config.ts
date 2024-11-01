@@ -1,6 +1,9 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
 import path from 'path';
+
+// eslint-disable-next-line import/no-unresolved
+import react from '@vitejs/plugin-react';
+// eslint-disable-next-line import/no-unresolved
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [react()],
