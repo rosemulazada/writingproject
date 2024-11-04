@@ -1,11 +1,11 @@
-import './App.css';
-
+import { useEffect } from 'react';
 import {  Route, Routes, useLocation } from 'react-router-dom';
+
 import HomePage from './components/pages/HomePage/HomePage'
 import { routes } from './utils/routes';
-import { useEffect } from 'react';
 
-function App() {
+
+const App = () => {
   const location = useLocation();
 
   useEffect(() => {
