@@ -10,7 +10,9 @@
       "tests/**/*.tsx",
       ".eslintrc.js",
       "vite.config.ts",
-      "App.tsx"
+      "App.tsx",
+      "tailwind.config.js",
+      "postcss.config.js",
     ]
   }
   
