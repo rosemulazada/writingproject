@@ -7,6 +7,7 @@ module.exports = {
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs', 'sanity', '**/micrio.d.ts'],
   parser: '@typescript-eslint/parser',
@@ -19,15 +20,12 @@ module.exports = {
     "unused-imports"
   ],
   parserOptions: {
-    project: '**/tsconfig.eslint.json',
+    project: ['./tsconfig.json'], // Specify it only for TypeScript files
   },
   "settings": {
     "import/resolver": {
       "typescript": {
       }, // this loads <rootdir>/tsconfig.json to eslint
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      },
     }
   },
   rules: {
@@ -63,7 +61,7 @@ module.exports = {
         "selector": "enumMember",
         "format": ["PascalCase", "UPPER_CASE"]
       },
-      // Enforce that boolean variables are prefixed with an allowed verb 
+      // Enforce that boolean variables are prefixed with an allowed verb (see docs/code-style.md)
       {
         "selector": "variable",
         "types": ["boolean"],
@@ -84,6 +82,12 @@ module.exports = {
         "allowSameFolder": true
       }
     ],
+
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   },
 }
-

@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@icons/*": ["src/components/icons/*"],
+      "@pages/*": ["src/components/pages/*"],
+      "@shared/*": ["src/components/shared/*"],
+      "@utils/*": ["src/utils/*"]
+    },
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
@@ -19,12 +28,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "paths": {
-      "@/*": ["./src/*"],
-      "shared": ["../src/shared/*"],
-    },
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts", "App.tsx"],
-  "exclude": ["node_modules"],
+  "include": ["src", "src/**/*", "src/**/**/*", "postcss.config.mjs"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

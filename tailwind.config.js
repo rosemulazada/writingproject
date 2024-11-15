@@ -1,13 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-
-// Converts pixels to rem units, 1px equals 0.0625 rem
-const rem = (px) => `${0.0625 * px}rem`
-
 export default {
   future: {
     hoverOnlyWhenSupported: true,
   },
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}', './src/**/**/*.{js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
       'roboto': ['Roboto', 'sans-serif'],
@@ -78,3 +74,8 @@ export default {
   },
   plugins: [],
 };
+
+// Converts pixels to rem units, 1px equals 0.0625 rem
+function rem(px) {
+  return `${0.0625 * px}rem`;
+}
