@@ -1,95 +1,95 @@
 {
   "ts-node": {
-      "require": [
-          "tsconfig-paths/register"
-      ]
+    "require": [
+      "tsconfig-paths/register"
+    ]
   },
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-      "@testing-library/jest-dom": "^5.17.0",
-      "@testing-library/react": "^13.4.0",
-      "@testing-library/user-event": "^13.5.0",
-      "@typescript-eslint/parser": "^5.62.0",
-      "@uidotdev/usehooks": "^2.4.1",
-      "@vitejs/plugin-react": "^4.3.3",
-      "clsx": "^2.1.1",
-      "easing-utils": "^1.0.0",
-      "framer-motion": "^11.3.29",
-      "lodash": "^4.6.2",
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0",
-      "react-router-dom": "^6.26.1",
-      "swr": "^2.2.5",
-      "tailwind-merge": "^2.5.2",
-      "usehooks-ts": "^3.1.0"
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@uidotdev/usehooks": "^2.4.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "clsx": "^2.1.1",
+    "easing-utils": "^1.0.0",
+    "framer-motion": "^11.11.17",
+    "lodash": "^4.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.26.1",
+    "swr": "^2.2.5",
+    "tailwind-merge": "^2.5.2",
+    "usehooks-ts": "^3.1.0"
   },
   "scripts": {
-      "dev": "vite",
-      "build": "vite build",
-      "preview": "vite preview",
-      "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-      "tsc:watch": "tsc -w",
-      "start": "npx tsconfig-paths"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "tsc:watch": "tsc -w",
+    "start": "npx tsconfig-paths"
   },
   "eslintConfig": {
-      "extends": [
-          "react-app",
-          "react-app/jest"
-      ]
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
-      "production": [
-          ">0.2%",
-          "not dead",
-          "not op_mini all"
-      ],
-      "development": [
-          "last 1 chrome version",
-          "last 1 firefox version",
-          "last 1 safari version"
-      ]
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-      "@types/lodash": "^4.17.7",
-      "@types/module-alias": "^2.0.4",
-      "@types/node": "^20.12.8",
-      "@types/react": "^18.2.66",
-      "@types/react-dom": "^18.2.22",
-      "@types/three": "^0.164.1",
-      "@typescript-eslint/eslint-plugin": "^7.2.0",
-      "@typescript-eslint/parser": "^7.2.0",
-      "@vitejs/plugin-react-swc": "^3.5.0",
-      "autoprefixer": "^10.4.19",
-      "eslint": "^8.57.0",
-      "eslint-config-prettier": "^9.1.0",
-      "eslint-import-resolver-typescript": "^3.6.1",
-      "eslint-plugin-import": "^2.29.1",
-      "eslint-plugin-no-relative-import-paths": "^1.5.5",
-      "eslint-plugin-prefer-arrow": "^1.2.3",
-      "eslint-plugin-prettier": "^5.2.1",
-      "eslint-plugin-react-hooks": "^4.6.2",
-      "eslint-plugin-react-refresh": "^0.4.10",
-      "eslint-plugin-unused-imports": "^3.2.0",
-      "module-alias": "^2.2.3",
-      "plop": "^4.0.1",
-      "plop-action-eslint": "^1.1.0",
-      "postcss": "^8.4.38",
-      "tailwindcss": "^3.4.3",
-      "ts-alias": "^0.0.7",
-      "ts-node": "^10.9.2",
-      "tsc": "^2.0.4",
-      "tsconfig-paths": "^4.2.0",
-      "tsx": "^4.19.2",
-      "typescript": "^5.2.2",
-      "vite": "^5.2.0",
-      "vite-plugin-svgr": "^4.2.0"
+    "@types/lodash": "^4.17.7",
+    "@types/module-alias": "^2.0.4",
+    "@types/node": "^20.12.8",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@types/three": "^0.164.1",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-no-relative-import-paths": "^1.5.5",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.10",
+    "eslint-plugin-unused-imports": "^3.2.0",
+    "module-alias": "^2.2.3",
+    "plop": "^4.0.1",
+    "plop-action-eslint": "^1.1.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "ts-alias": "^0.0.7",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-svgr": "^4.2.0"
   },
   "volta": {
-      "node": "20.16.0"
+    "node": "20.16.0"
   },
   "_moduleAliases": {
-      "@": "./src"
+    "@": "./src"
   }
 }

@@ -6,8 +6,7 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
-      'roboto': ['Roboto', 'sans-serif'],
-      'lora': ['Lora', 'serif'],
+      'garamond': ['EB Garamond', 'serif'],
     },
     fontSize: {
       'heading-extra-large': [rem(34), { lineHeight: rem(37.4) }],
@@ -25,6 +24,8 @@ export default {
     },
     colors: {
       // Custom colors
+      'chocolate': '#875437',
+      'cream': '#FFFDF4',
       'rose-100': '#FFA590',
       'rose-200': '#400D01',
       'rose-300': '#230700',
